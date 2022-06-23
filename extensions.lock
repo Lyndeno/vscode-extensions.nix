@@ -1,15 +1,9 @@
 { extensions = [
   {
-    name = "vim";
-    publisher = "vscodevim";
-    version = "1.22.2";
-    sha256 = "1d85dwlnfgn7d32ivza0bv1zf9bh36fx7gbi586dligkw202blkn";
-  }
-  {
-    name = "rust-analyzer";
-    publisher = "rust-lang";
-    version = "0.4.1102";
-    sha256 = "0f09nqplnvllzgg9w671w7bsqcsn7j8j9m5mg47gp2bc5lwbb8hf";
+    name = "direnv";
+    publisher = "mkhl";
+    version = "0.6.1";
+    sha256 = "1d60hqww1innch277yd3va2snpsp19c7w4v0rxz2jvzvgykfmx77";
   }
 ];
 }
