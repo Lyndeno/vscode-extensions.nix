@@ -1,0 +1,21 @@
+name: Update Extensions
+
+on:
+  push:
+
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  check-flake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Install Nix
+        uses: cachix/install-nix-action@v17
+      - name: Check Nix Flake
+        run: ./update.sh
