@@ -20,4 +20,4 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-unstable
       - name: Check Nix Flake
-        run: ./update.sh
+        run: ./update.sh ./extensions
